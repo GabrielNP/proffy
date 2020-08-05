@@ -1,6 +1,8 @@
 # Next Level Week # 2
 
-Dependências:
+Vamos criar a Proffy uma plataforma de estudos e conexão entre alunos e professores.
+
+# Dependências:
 
     - Node + NPM;
     - Yarn;
@@ -18,6 +20,11 @@ Para iniciar o projeto criado, navegar até pasta com o nome do projeto e execut
 yarn start
 ```
 
-# Sobre o projeto
+Instalar módulo de navegação:
 
-Vamos criar a Proffy uma plataforma de conexão entre alunos e professores.
+```
+yarn add react-router-dom
+
+yarn add @types/react-router-dom -D
+```
+
