@@ -57,14 +57,41 @@ Acessar pelo navegador o endereço `http://localhost:3000` para ver a aplicaçã
 Este tópico tem como finalidade deixar registrado para o autor e qualquer pessoa algumas instruções que foram aprendidas e/ou utilizadas para conceber este projeto.
 
 
-#### Criar um projeto React com Yarn:
+#### Criar uma aplicação React:
 
 ```
 yarn creat-react-app <nome-do-projeto> --template typescript
+
+ou
+
+npx creat-react-app <nome-do-projeto> --template typescript
 ```
 
 No caso desse projeto utilizamos o parâmetro `--template typescript`, o qual permite selecionar um modelo/template para criar o projeto.
 
+#### Criar um servidor Node:
+
+ -
+   ```bash
+   # Iniciar um projeto
+   yarn init -y
+   
+   ou
+   
+   npm init -y
+   ```
+
+- No caso deste projeto queremos trabalhar com Typescript, portanto é necessário instalar essa dependência (ver [módulos instalados](#Módulos-instalados)).
+
+- 
+   ```bash
+   # Criar aquivo de configuração do Typescript
+   yarn tsc --init 
+
+   ou 
+
+   npx tsc --init
+   ```
 
 #### Módulos instalados
 
@@ -72,3 +99,5 @@ No caso desse projeto utilizamos o parâmetro `--template typescript`, o qual pe
 |------|-------|
 |Rotas de navegação|`yarn add react-router-dom`|
 ||`yarn add @types/react-router-dom -D`
+|Typescript|`yarn add typescript -D`
+|Node TS server|`yarn add ts-node-dev -D`
