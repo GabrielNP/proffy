@@ -14,13 +14,8 @@ app.use(express.json());
  *  Query Params: identify or determine some parameters I want to get; used on GET; Ex: /users?page=2&sort=name
  */
 
-app.post('/users', (request, response) => {
-    const users = [
-        { name: "Gabriel", age: 24 },
-        { name: "Gustavo", age: 23 }
-    ]
-
-    return response.json(users)
+app.get('/', (request, response) => {
+   return response.json({ message: "Hello World!" });
 })
 
 // Listen http requests at definied port: 3333
