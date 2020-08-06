@@ -50,7 +50,27 @@ Acessar pelo navegador o endereço `http://localhost:3000` para ver a aplicaçã
 
 ### Executar API
 
-...
+```bash
+# Ir para a pasta server
+cd server/
+```
+
+#### Com NPM
+```bash
+# Instalar dependências
+$ npm install 
+# Executar aplicação
+$ npm start
+```
+#### Com Yarn
+```bash
+# Instalar dependências
+$ yarn install 
+# Executar aplicação
+$ yarn start
+```
+
+Acessar pelo navegador o endereço `http://localhost:3333`
 
 ## Breve documentação técnica
 
@@ -81,7 +101,7 @@ No caso desse projeto utilizamos o parâmetro `--template typescript`, o qual pe
    npm init -y
    ```
 
-- No caso deste projeto queremos trabalhar com Typescript, portanto é necessário instalar essa dependência (ver [módulos instalados](#Módulos-instalados)).
+- No caso deste projeto queremos trabalhar com Typescript, portanto é necessário instalar suas respectivas dependências (ver [módulos instalados](#Módulos-instalados)).
 
 - 
    ```bash
@@ -93,6 +113,8 @@ No caso desse projeto utilizamos o parâmetro `--template typescript`, o qual pe
    npx tsc --init
    ```
 
+- Banco de dados SQLite (ver [módulos instalados](#Módulos-instalados))
+
 #### Módulos instalados
 
 |Módulo|Comando|
@@ -103,3 +125,4 @@ No caso desse projeto utilizamos o parâmetro `--template typescript`, o qual pe
 |Node TS server|`yarn add ts-node-dev -D`
 |Express|`yarn add express`
 ||`yarn add @types/express -D`
+|SQLite|`yarn add knex sqlite3`
