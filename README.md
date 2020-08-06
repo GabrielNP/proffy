@@ -101,3 +101,5 @@ No caso desse projeto utilizamos o parâmetro `--template typescript`, o qual pe
 ||`yarn add @types/react-router-dom -D`
 |Typescript|`yarn add typescript -D`
 |Node TS server|`yarn add ts-node-dev -D`
+|Express|`yarn add express`
+||`yarn add @types/express -D`
