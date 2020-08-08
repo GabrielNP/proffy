@@ -1,22 +1,11 @@
 import express from 'express';
+import routes from './routes';
 
 const app = express();
 
 // Making Express understand JSON. It's necessary to read request body.
 app.use(express.json());
-
-/* Http Methods:
- *  GET, POST, DELETE, PUT
- *
- * Params:
- *  Request body: data to create/update a registry; used in POST; Ex: { name: "Gabriel", age: 24 }
- *  Route Params: identify resource I want to update/delete; used on PUT/DELETE; Ex: /users/:id
- *  Query Params: identify or determine some parameters I want to get; used on GET; Ex: /users?page=2&sort=name
- */
-
-app.get('/', (request, response) => {
-   return response.json({ message: "Hello World!" });
-})
+app.use(routes);
 
 // Listen http requests at definied port: 3333
 app.listen(3333);
