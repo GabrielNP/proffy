@@ -126,3 +126,5 @@ No caso desse projeto utilizamos o parâmetro `--template typescript`, o qual pe
 |Express|`yarn add express`
 ||`yarn add @types/express -D`
 |SQLite|`yarn add knex sqlite3`
+|Cors|`yarn add cors`
+||`yarn add @types/cors -D`
